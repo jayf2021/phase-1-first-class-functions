@@ -1,13 +1,16 @@
 function receivesAFunction(callback){
-    callback()
-}
-function returnsANamedFunction(){
+    console.log(callback());
+}   
+
+function returnsANamedFunction() { 
     return function named(){
-        console.log("My name is Forest Gump")
+        console.log("named");
     }
 }
-function returnsAnAnonymousFunction(){
-    return function(){
-        console.log('Run, Forest')
+
+function returnsAnAnonymousFunction() {
+    return function () {
+        console.log("anonymous");
     }
 }
+
